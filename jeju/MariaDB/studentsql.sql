@@ -34,3 +34,12 @@ SELECT * FROM students;
 SELECT SUM(kor+eng+math) FROM students WHERE NAME="대한이";
 SELECT SUM(kor+eng+math) FROM students WHERE NAME="민국이";
 SELECT SUM(kor+eng+math) FROM students WHERE NAME="만세";
+
+SELECT  FROM students WHERE NAME="대한이";
+
+SELECT NAME, kor, eng, math, kor+eng+math AS total,round(AVG((kor+eng+math)/3),2) AS average FROM students WHERE NAME="대한이"
+SELECT NAME, kor, eng, math, kor+eng+math AS total,round(AVG((kor+eng+math)/3),2) AS average FROM students WHERE NAME="민국이"
+SELECT NAME, kor, eng, math, kor+eng+math AS total,round(AVG((kor+eng+math)/3),2) AS average FROM students WHERE NAME="만세";
+
+
+

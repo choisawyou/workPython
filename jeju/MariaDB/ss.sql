@@ -1,0 +1,3 @@
+SELECT * FROM pet WHERE birth >='2015-01-01';
+
+SELECT * FROM pet;

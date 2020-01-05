@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block header %}
+
+{% endblock %}
+
+{% block content %}
+<table>
+    {% for car in object_list %}
+        <tr>
+            <td>{{car[1]}}</td>
+            <td>{{car[2]}}</td>
+            <td>{{car[3]}}</td>
+            <td>{{car[4]}}</td>
+            <td>{{car[5]}}</td>
+            <td>{{car[6]}}</td>
+            <td>{{car[7]}}</td>
+        </tr>
+    {% endfor %}
+{% for car in object_list %}
+    {{ car[1] }}, {{ car[2] }}</br>
+{% endfor %}
+</table>
+<table>
+   <form name="car" id="insertCar" method="post">
+       <tr>
+            <td> 차량 번호 : <input type="text"   id="carNum" name="carNum"  size="10"></td>
+            <td> 이름 : <input type="text"   id="name"  name="name"   size="10"></td>
+            <td> 등록여부 : <input type="text"   id="enroll"  name="enroll"   size="10"></td>
+            <td> Type : <input type="text"   id="type"  name="type"   size="10"></td>
+            <td> <button type="button" id="insertBtn"> "차량  등록"</button> </td>
+        </tr>
+   </form>
+</table>
+{% endblock %}

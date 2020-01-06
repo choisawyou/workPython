@@ -1,0 +1,7 @@
+numpy(배열) -> pandas -> scipy(최적화, 보강법, 적분, 미분),statsmodels(R) -> scikts(ML) -> tensorflow(DeepML) -> keras
+
+pandas : 열중심 데이터 저장, shap(,),  ndim(차원)
+
+scikits : 정보기만학습, 확률기반학습, 유사도기반학습, 오차기반학습
+
+

@@ -1,0 +1,18 @@
+matplotlib(시각화) => seaborn(시각화) => pandas = ndarray+dict(검색, 중복(O), 순서(O)) => scikits
+
+numpy
+    1. vector(1차원) : 크기 = norm => 피타고라스, 방향 = 내적 =상관계수(독립변수와  종속변수와의 관계)
+    2. matrix(2차원)
+    3. tensor(3차원)
+    
+
+
+pandas
+    1. series(1차원) : 동질적 data
+    2. dataframe(2차원) : - 열간 이질적 data, key에 의한 indexing가능(key : loc, 숫자 : iloc), 행인덱스 : index, 열인덱스 : colums, 값 : value
+                          - 전처리 : * 결측치 처리(isna)
+                                     * 이상치 처리(box)
+                                     * 범주화 Categorical
+                                     * 정규화 hyper parametert
+                            
+    3. panel(3차원) : 

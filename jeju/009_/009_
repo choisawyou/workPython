@@ -1,0 +1,10 @@
+    전처리 :  1. 결측치 : 제거, 평균값, 0, 유사도
+              2. 이상치 : IQR(3사분위수 - 1사분위수)1.5배
+              3. 범주화 : categorical(0/1 incoding)
+              4. 정규화 : ANN, mean/max, z점수(확률을 알아볼때)
+              
+              
+함수를 적용하는 함수 : 
+    - map : series
+    - apply : 열, 행별 합,평균,max등....
+    - applymap : 

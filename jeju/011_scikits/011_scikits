@@ -1,0 +1,33 @@
+scikits : 있는 모델의 parameter를 추정하는 것, 한번에 하나의 결과만 확인가능? 여러게는 tensorflow, 과적합을 못하게 해야한다!!!!!!!!!!!!!!!!!!!!!!!!
+    종속과 독립이 어떤 연관이 있는지 알아보는 것
+    Machine Learning, pandas와 통일
+        - deprecate estimnater 추정에?
+        - transfommer : 전처리, fit, predict
+    
+    문제해결 : - simulation
+               - optimization : 수리적 최적화
+               - data mining : data 속에서 규칙을 찾는다(의사결정을 하기 위해서). 일반화된 문제 해결(과대적합)
+
+    Model : - Classification(분류) : 
+            - Regrassion(예측) : 
+            - Clustering(군집) : 
+            
+    정보기반 : DT->RF->AdaBoost->GB->xGBoost(Gpu,다중언어)->Stack Model
+    확률기반 : Naive Bayes(text mining)
+    유사도기반 : KNN, KMeans, 추천
+    오차기반 : ANN SVM
+    
+    
+feature Engineering:
+    전처리 : - 결측치 : drop, fillin, 0, 평균
+             - 이상치 : fitering: IQR X 1.5
+             - 범주화 : cut(일정한 범위로), groupby, qcut(일정한 개수로), get_dummies
+             - 정규화 : mean-max, z점수, robust, normalization
+             
+    transformation : - select : model select(tranning, test data, validation) : KFold
+                                variable select(변수중 요도, 변수) : 분산이 큰변수 좋다~!!
+                                특성추출, feature Extraction(FA(요인분석), PCA(주성분석, 상관계수, 공분산), MDS(다차원확대) : 오류, 에러 처리?)
+    
+                     - filtering
+                     - 요약
+                     - arrange

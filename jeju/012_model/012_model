@@ -1,0 +1,23 @@
+Model 개발
+분류,예측 -> 문제제기 -> 데이터 수집 -> preprocessing -> learning -> Model계수(parameter) -> evaluation(평가, 제대로 안나오면 다시 정리) -> priect(예측, 분류)
+
+분류 : Logistic Regression, evaluation(accuarcy, f1_score = 2(precision+recall) /recision+recall)
+       DicisionTree : Data 강건 -> 시각화 지원, 변수 중요도 출력(fearute_select 대신 쓰일수도 있다.) 문제 : 과적합, 변수의 순서를 바꾸면 결과도 다르다.
+           해결 : RF 500~100 개의 변수를 만들어서 하는것( 평균, 투표) 시간이 오래걸린다.
+           해결 : Ada : 틀린거에 가중치로 모델 만들기 반복  -> gradian boost(잘못된 부분의 모델생성)
+           XG boost
+       SVC
+
+예측 : Linear Regression, evaluation(상관계수, meansquare error = (실제값-예측값)^2)
+       SVR
+
+전처리 : scikit  - select : model_select : 모델선책 -> tramin_test_split , cross_val_score(cv : 5등분후 4(훈련):1(테스트) 모든 데이터로)
+                            feature_select : 특성선택 -> RFE(분산이 작은데이터를 제거한다. step을 밟으며 )
+                            feature_extraction : 특성추출 -> FA(요인분석), PCA(주성분분석 : 노이즈 제거), MDS(다차원 척도법: 시각화를 위해서 특징을 추출)
+                            
+       
+알고있어라~~~~~~!!!!!!!!!!!!! 이놈아~~~~~~~~~!!!!!!!!!!!!!
+
+pipline : 전처리+모델?
+
+GreidSearchCV : 노가다 하기 싫으면 이거 알아야한답니다.~~~!!!!!!!!!

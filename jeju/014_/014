@@ -1,0 +1,5 @@
+preprocessing(전처리, 정규화를 꼭 해줘야함) - > leaning -> model -> pridict(다시 leaning) -> service
+
+
+
+ANN -> 전진신결망 FFNN -> MLP(multi-layer Perceptron)

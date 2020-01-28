@@ -1,0 +1,30 @@
+
+
+
+
+
+관측치 : Data Point, 행렬의 곱(내적, X @ W), 내적의 의미: data의 설명력, 설명을할 수 있다.
+
+선형을 비선형으로 바꾸기위해서 Activation function(활성함수)를 달아준다, XOR문제를 풀기위해
+
+
+
+Activation function(활성함수) : sigmoid : 0 ~ 1
+                                tanh : -1 ~ 1
+                                softmax
+
+
+(실제값 - 예측값)^2
+예측 : MSE
+분류 : enthrophy
+
+
+mini batch : Data를 자른다. 잘라서 학습
+
+Optimizer : leaning rate, 기울기, Adam(leaning rate, 기울기)
+
+
+
+
+
+PCA는 선형, 비선형은 약하다.

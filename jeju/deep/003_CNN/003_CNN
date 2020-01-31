@@ -1,0 +1,20 @@
+
+
+
+Convolution(적분) : 적분이라고 하는 이유는 fillter를 곱하고 더해서 나온 애가 특징인데 곱하고 더했다고 해서 적분이라고 하는거 같다.
+        주변의값 => pixel(100x100, 모두 변수),
+        fully-connected(일렬로 서서 들어간다.10000), 
+        이미지 그대로 특징을 추출 : 이유 원본이미지가 일렬로 들어가면 특징추출이 힘들다.
+        fillter가 필요하다. 특징을 찾기위해서
+        작은 fillter와 큰 fillter의 차이 : 큰건 큰특징, 작은건 작은 특징
+        valid : 100 - 필터 +1
+        same : padding추가  => padding을 하는 이유는 모서리에 찍힌 사람 또는 눈의 특징 추출
+        
+        stride : 1이면 한 칸을 띄면서 fillter를 하고, 
+                 2이면 두 칸씩 띄면서 fillter를 적용 => SAME이지만 straid가 크면 그만큼 줄어든다.
+                 fillter가 띄는 정도
+        
+        RGB도 chennel이라 하지만 fillter로 나온 chennel과는 다르다.
+        filter의 개수에따라 여러개의 chennel이 발생한다. 한 채널당 한개의 특징이라 생각하면 될듯
+        
+        
